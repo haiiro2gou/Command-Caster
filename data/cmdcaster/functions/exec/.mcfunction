@@ -1,11 +1,15 @@
 #> cmdcaster:exec/
 # @within function cmdcaster:tick
 
-# ページ代入
+# 準備
     $data modify storage cmdcaster:exec Scripts set from entity @s Inventory.[{Slot:$(Slot)}].tag.pages
+    scoreboard players set $Successes AshenCmdCaster.Temporary 0
 
-# ループ導入
+# ループ
     function cmdcaster:exec/loop/
+
+# 通知
+    tellraw @a [{"text":"Executed "},{"score":{"name":"$Successes","objective":"AshenCmdCaster.Temporary"}},{"text":" command(s) from Command Caster"}]
 
 # 再度用意
     clear @s written_book{AshenCmdCaster:1} 1
@@ -13,3 +17,4 @@
 
 # リセット
     data remove storage cmdcaster:exec Slot
+    scoreboard players reset $Successes AshenCmdCaster.Temporary
