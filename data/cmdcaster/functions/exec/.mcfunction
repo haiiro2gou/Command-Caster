@@ -7,7 +7,7 @@
 # ループ導入
     function cmdcaster:exec/loop/
 
-# 削除
+# 再度用意
     clear @s written_book{AshenCmdCaster:1} 1
     function cmdcaster:give
 

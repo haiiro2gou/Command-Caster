@@ -5,7 +5,6 @@
 
 # 起動
     data modify storage cmdcaster:exec Script set string storage cmdcaster:exec Scripts[0]
-    tellraw @a {"nbt":"{}","storage":"cmdcaster:exec"}
     data remove storage cmdcaster:exec Scripts[0]
     function cmdcaster:exec/loop/run with storage cmdcaster:exec
 
