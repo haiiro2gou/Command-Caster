@@ -10,14 +10,23 @@
     tellraw @a [{"text":"Thanks for installation!"}]
     tellraw @a [{"text":"================================","color":"gold"}]
 
-#> scoreboard
-    #> written_book
-    # @within function cmdcaster:tick
-        scoreboard objectives add AshenCmdCaster.Signed dummy {"text":"本の署名チェック"}
+#> reset
+    scoreboard objectives remove AshenCmdCaster.FirstJoin
 
+#> scoreboard
     #> temporary
     # @public
         scoreboard objectives add AshenCmdCaster.Temporary dummy {"text":"一時スコア"}
+
+    #> handler
+    # @within function
+    #   cmdcaster:tick
+    #   cmdcaster:handler/**
+        scoreboard objectives add AshenCmdCaster.FirstJoin custom:play_time {"text":"初回join"}
+
+    #> written_book
+    # @within function cmdcaster:tick
+        scoreboard objectives add AshenCmdCaster.Signed dummy {"text":"本の署名チェック"}
 
 #> storage
 # @public
