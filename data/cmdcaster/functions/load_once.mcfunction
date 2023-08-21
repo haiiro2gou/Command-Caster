@@ -2,7 +2,7 @@
 # @within function cmdcaster:load
 
 #> version
-    data modify storage global Ashen.CmdCaster.Version set value "v0.0.0"
+    data modify storage global Ashen.CmdCaster.Version set value "v0.0.1"
 
     tellraw @a [{"text":"================================","color":"gold"}]
     tellraw @a [{"text":"Command Caster ","color":"green"},{"nbt":"Ashen.CmdCaster.Version","storage":"minecraft:global","color":"dark_gray"},{"text":" by はいいろ。","color":"gray"}]
