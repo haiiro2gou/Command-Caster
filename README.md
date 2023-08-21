@@ -7,11 +7,14 @@ Datapack that adds a book that can execute commands
 
 - 23w31a- (1.20.2 snapshot)
 
-## 使い方
+## 使い方 (How to use)
 
-「Command Caster」にコマンドを入力するだけ！ (Tab補完はありません)
+`/function cmdcaster:give`を実行して「Command Caster」(本と羽ペン)を入手  
+「Command Caster」にコマンドを入力して署名するだけ！ (Tab補完はありません)
 
-## ライセンス (License)
+## その他 (Others)
+
+### ライセンス (License)
 
 [Apache-2.0 License](LICENSE)が適用されています。
 
