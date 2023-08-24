@@ -4,8 +4,9 @@
 #   cmdcaster:exec/loop/
 
 # 起動
-    data modify storage cmdcaster:exec Script set string storage cmdcaster:exec Scripts[0] 9 -2
+    data modify storage cmdcaster:exec Script set from storage cmdcaster:exec Scripts[0]
     data remove storage cmdcaster:exec Scripts[0]
+    function cmdcaster:exec/loop/get_text with storage cmdcaster:exec
     function cmdcaster:exec/loop/run with storage cmdcaster:exec
 
 # リセット
