@@ -12,7 +12,7 @@
     tellraw @a [{"text":"Executed "},{"score":{"name":"$Successes","objective":"Ashen.CmdCaster.Temporary"}},{"text":" command(s) from Command Caster"}]
 
 # 再度用意
-    clear @s written_book{Ashen.CmdCaster:1} 1
+    clear @s written_book{Ashen:{CmdCaster:{Book:1b}}} 1
     function cmdcaster:give
 
 # リセット
