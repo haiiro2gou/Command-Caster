@@ -6,4 +6,4 @@
 
 #> from: 36af504164e91f8b55e9d8deedfd07902318c035
 # @private
-    scoreboard objectives add Ashen.CmdCaster.FirstJoin custom:play_time {"text":"初回join"}
+    scoreboard objectives add AshenCmdCaster.FirstJoin custom:play_time {"text":"初回join"}
