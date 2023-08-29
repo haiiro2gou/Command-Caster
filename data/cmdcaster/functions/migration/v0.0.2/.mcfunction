@@ -11,4 +11,4 @@
     scoreboard objectives remove Ashen.CmdCaster.Temporary
     scoreboard objectives add Ashen.CmdCaster.FirstJoin custom:play_time {"text":"初回join"}
     scoreboard objectives add Ashen.CmdCaster.Temporary dummy {"text":"一時スコア"}
-    clear @a written_book{AshenCmdCaster:1}
+    clear @a written_book{Ashen:{CmdCaster:{Book:1b}}}
