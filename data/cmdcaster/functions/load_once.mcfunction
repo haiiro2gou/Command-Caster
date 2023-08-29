@@ -18,10 +18,6 @@
     # @public
         scoreboard objectives add Ashen.CmdCaster.Temporary dummy {"text":"一時スコア"}
 
-    #> global
-    # @public
-        scoreboard objectives add Ashen.CmdCaster.Global dummy {"text":"常時スコア"}
-
     #> handler
     # @within function
     #   cmdcaster:tick
