@@ -6,10 +6,10 @@
     #declare score_holder $Result
 
 # 実行
-    $execute store success score $Result AshenCmdCaster.Temporary run $(Script)
+    $execute store success score $Result Ashen.CmdCaster.Temporary run $(Script)
 
 # 確認
-    execute if score $Result AshenCmdCaster.Temporary matches 1.. run scoreboard players add $Successes AshenCmdCaster.Temporary 1
+    execute if score $Result Ashen.CmdCaster.Temporary matches 1.. run scoreboard players add $Successes Ashen.CmdCaster.Temporary 1
 
 # リセット
-    scoreboard players reset $Result AshenCmdCaster.Temporary
+    scoreboard players reset $Result Ashen.CmdCaster.Temporary

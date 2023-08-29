@@ -11,24 +11,33 @@
     tellraw @a [{"text":"================================","color":"gold"}]
 
 #> reset
-    scoreboard objectives remove AshenCmdCaster.FirstJoin
+    scoreboard objectives remove Ashen.CmdCaster.FirstJoin
 
 #> scoreboard
     #> temporary
     # @public
-        scoreboard objectives add AshenCmdCaster.Temporary dummy {"text":"一時スコア"}
+        scoreboard objectives add Ashen.CmdCaster.Temporary dummy {"text":"一時スコア"}
+
+    #> global
+    # @public
+        scoreboard objectives add Ashen.CmdCaster.Global dummy {"text":"常時スコア"}
 
     #> handler
     # @within function
     #   cmdcaster:tick
     #   cmdcaster:handler/**
-        scoreboard objectives add AshenCmdCaster.FirstJoin custom:play_time {"text":"初回join"}
-
-    #> written_book
-    # @within function cmdcaster:tick
-        scoreboard objectives add AshenCmdCaster.Signed dummy {"text":"本の署名チェック"}
+        scoreboard objectives add Ashen.CmdCaster.FirstJoin custom:play_time {"text":"初回join"}
 
 #> storage
-# @public
-    #declare storage cmdcaster:exec
-    #declare storage global
+    #> global
+    # @public
+        #declare storage global
+        data modify storage global Ashen.Prefix.DEBUG set value "§3DEBUG >> §r"
+        data modify storage global Ashen.Prefix.SUCCESS set value "§aSUCCESS >> §r"
+        data modify storage global Ashen.Prefix.FAILED set value "§cFAILED >> §r"
+        data modify storage global Ashen.Prefix.ERROR set value "§cERROR >> §r"
+        data modify storage global Ashen.Prefix.CRIT set value "§4CRITICAL >> §r"
+
+    #> command caster
+    # @within function cmdcaster:**
+        #declare storage cmdcaster:exec
