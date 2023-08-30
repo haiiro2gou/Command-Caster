@@ -8,6 +8,9 @@
     data remove storage cmdcaster:exec Scripts[0]
     function cmdcaster:exec/loop/get_text with storage cmdcaster:exec
 
+# ログ残し
+    data modify storage cmdcaster:exec Log append from storage cmdcaster:exec Script
+
 # 起動
     function cmdcaster:exec/loop/run with storage cmdcaster:exec
 
