@@ -18,6 +18,8 @@ Datapack that adds a book that can execute commands
 `/function cmdcaster:give`を実行して「Command Caster」(本と羽ペン)を入手  
 「Command Caster」にコマンドを入力して署名するだけ！ (Tab補完はありません)
 
+`/function cmdcaster:config/`を実行することで動作に関連する設定を変更可能です
+
 ## その他 (Others)
 
 ### ライセンス (License)
