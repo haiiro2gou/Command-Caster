@@ -5,7 +5,7 @@
     function cmdcaster:config/get
 
 # 準備
-    $data modify storage cmdcaster:exec Scripts set from entity @s Inventory.[{Slot: $(Slot)}].tag.pages
+    $data modify storage cmdcaster:exec Scripts set from entity @s Inventory.[{Slot: $(Slot)b}].tag.pages
     scoreboard players set $Successes Ashen.CmdCaster.Temporary 0
 
 # ループ
