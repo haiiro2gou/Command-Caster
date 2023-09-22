@@ -11,7 +11,7 @@ Datapack that adds a book that can execute commands
 
 ## 対応バージョン (Versions)
 
-- 23w31a- (1.20.2 snapshot)
+- 1.20.2
 
 ## 使い方 (How to use)
 
