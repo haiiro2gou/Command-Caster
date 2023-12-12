@@ -12,10 +12,10 @@
     execute if score @s Ashen.CmdCaster.Trigger matches -2147483648..2147483647 run function cmdcaster:config/trigger
 
 # 本探し
-    execute store result score #Signed Ashen.CmdCaster.Temporary run clear @s written_book{Ashen: {CmdCaster: {Book: 1b}}} 0
-    execute if score #Signed Ashen.CmdCaster.Temporary matches 1.. run data modify storage cmdcaster: Slot set from entity @s Inventory.[{id: "minecraft:written_book", tag: {Ashen: {CmdCaster: {Book: 1b}}}}].Slot
-    execute if score #Signed Ashen.CmdCaster.Temporary matches 1.. run function cmdcaster:exec/ with storage cmdcaster:
-    scoreboard players reset #Signed Ashen.CmdCaster.Temporary
+    execute store result score #Signed Ashen.Global.Temporary run clear @s written_book{Ashen: {CmdCaster: {Book: 1b}}} 0
+    execute if score #Signed Ashen.Global.Temporary matches 1.. run data modify storage cmdcaster: Slot set from entity @s Inventory.[{id: "minecraft:written_book", tag: {Ashen: {CmdCaster: {Book: 1b}}}}].Slot
+    execute if score #Signed Ashen.Global.Temporary matches 1.. run function cmdcaster:exec/ with storage cmdcaster:
+    scoreboard players reset #Signed Ashen.Global.Temporary
 
 # reset
     data remove storage indexstorage: Index

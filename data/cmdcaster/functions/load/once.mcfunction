@@ -14,17 +14,13 @@
     scoreboard objectives remove Ashen.CmdCaster.UserID
 
 #> scoreboard
-    #> temporary
-    # @public
-        scoreboard objectives add Ashen.CmdCaster.Temporary dummy {"translate": "Ashen.CmdCaster.ScoreTemporary", "fallback": "Command Caster: Temporary"}
-
     #> trigger
     # @within function
     #   cmdcaster:config/**
     #   cmdcaster:tick/player
         scoreboard objectives add Ashen.CmdCaster.Trigger trigger {"translate": "Ashen.CmdCaster.ScoreTrigger", "fallback": "Command Caster: Trigger"}
 
-    #> UserID
+#> UserID
     # @public
         scoreboard objectives add Ashen.CmdCaster.UserID dummy {"translate": "Ashen.CmdCaster.ScoreUserID", "fallback": "Command Caster: UserID"}
 
