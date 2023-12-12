@@ -10,19 +10,12 @@
     tellraw @a [{"translate": "Ashen.CmdCaster.Install", "fallback": "Thanks for Installation!"}]
     tellraw @a [{"text": "================================", "color": "gold"}]
 
-#> reset
-    scoreboard objectives remove Ashen.CmdCaster.UserID
-
 #> scoreboard
     #> trigger
     # @within function
     #   cmdcaster:config/**
     #   cmdcaster:tick/player
         scoreboard objectives add Ashen.CmdCaster.Trigger trigger {"translate": "Ashen.CmdCaster.ScoreTrigger", "fallback": "Command Caster: Trigger"}
-
-#> UserID
-    # @public
-        scoreboard objectives add Ashen.CmdCaster.UserID dummy {"translate": "Ashen.CmdCaster.ScoreUserID", "fallback": "Command Caster: UserID"}
 
 #> storage
     #> exec
