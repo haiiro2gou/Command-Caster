@@ -1,9 +1,5 @@
 #> cmdcaster:tick/player
-# @within tag/function ashen_lib:tick/player
-
-#> private
-# @private
-    #declare score_holder #Signed
+# @within tag/function ashen_lib:tick/player/
 
 # index
     execute store result storage indexstorage: Index int 1 run scoreboard players get @s Ashen.CmdCaster.UserID
