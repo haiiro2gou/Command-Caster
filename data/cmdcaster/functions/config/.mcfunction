@@ -7,8 +7,7 @@
     tellraw @s [{"text": ""}]
 
 # List
-    execute store result storage cmdcaster:player Index int 1 run scoreboard players get @s Ashen.CmdCaster.UserID
-    function cmdcaster:config/list with storage cmdcaster:player
+    function cmdcaster:config/list
 
 # Suffix
     tellraw @s [{"text": ""}]
@@ -20,4 +19,3 @@
     scoreboard players enable @s Ashen.CmdCaster.Trigger
 
 # Reset
-    data remove storage cmdcaster:player Index
