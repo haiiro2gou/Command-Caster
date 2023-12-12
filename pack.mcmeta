@@ -1,9 +1,6 @@
 {
     "pack": {
         "pack_format": 18,
-        "supported_formats": {
-            "min_exclusive": 18
-        },
         "description": "Adds a book that can execute commands"
     }
 }
