@@ -9,3 +9,4 @@ execute if data storage global Ashen.CmdCaster{Version: "v0.0.3"} run function c
 execute if data storage global Ashen.CmdCaster{Version: "v0.0.4"} run function cmdcaster:migration/v0.1.0/
 execute if data storage global Ashen.CmdCaster{Version: "v0.1.0"} run function cmdcaster:migration/v0.1.1/
 execute if data storage global Ashen.CmdCaster{Version: "v0.1.1"} run function cmdcaster:migration/v0.1.2/
+execute if data storage global Ashen.CmdCaster{Version: "v0.1.2"} run function cmdcaster:migration/v0.1.3/
